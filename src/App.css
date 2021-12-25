@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-weight: 300;
+  font-family: 'Roboto', sans-serif;
+  scroll-behavior: auto;
+  scrollbar-width: thin;
+  scrollbar-color: rgb(247, 71, 17) rgb(242, 246, 255);
+}
+*::-webkit-scrollbar{
+  width: 0.9rem;
+}
+*::-webkit-scrollbar-track {
+  background: rgb(242, 246, 255);
+}
+*::-webkit-scrollbar-thumb {
+  background-color: rgb(247, 71, 17);
+  border-radius: 1rem;
+  border: 3px solid rgb(242, 246, 255);
+}
+
+.navonFixed{
+  background: transparent !important;
+}
+.navonStikcy{
+  position: fixed !important;
+  top: 0vh !important;
+  left: 0 !important;
+  right: 0 !important;
+  min-height: 9vh !important;
+  background: rgb(0, 0, 0) !important;
+  backdrop-filter: blur(0.5rem) !important;
+  box-shadow: 0.1rem 0.1rem 1rem rgba(255,255,255,0.5);
+}
+a{
+  text-decoration: none !important;
+}
+:root{
+  --background-color: linear-gradient(209.21deg, rgb(247, 134, 27) 13.57%, rgb(247, 71, 17) 58.38%);
+}
+body{
+  background: rgb(242, 246, 255);
+}
+.navlink-nobg{
+  color: #f3f3f3 !important;
+  background: transparent !important;
+  position: relative !important;
+}
+
+/* ===================================================
+  |||||||||||||||||||||||||||||||||||||||||||||||||||
+====================================================== */
+.btn-theme{
+  color: #fff;
+  outline: none;
+  border: none;
+  padding: 0.5rem 1.7rem;
+  font-size: 1.2rem;
+  font-weight: 300;
+  opacity: 1;
+  z-index: 1500;
+  background: var(--background-color);
+  border-radius: 0.5rem;
+  cursor: default;
+  transition: all 500s cubic-bezier(0.77, 0, 0.175, 1) 0s;
+}
+.btn-theme:nth-child(2){
+  border: 1px solid rgba(200, 11, 11, 1) !important;
+  background: transparent !important;
+  margin-left: 2rem;
+}
+.btn-theme:nth-child(2):hover{
+  background: linear-gradient(209.21deg, rgb(247, 134, 27) 13.57%, rgb(247, 71, 17) 58.38%) !important;
+}
+@media screen and (min-width: 550px) and (max-width: 767px){
+  .btn-theme{
+    font-size: 1rem;
+    padding: 0.5rem 1.5rem;
+  }
+}
+@media screen and (min-width: 280px) and (max-width: 550px){
+  .btn-theme{
+    font-size: 0.85rem;
+    padding: 0.35rem 1.3rem;
+  }
+}
+@media screen and (min-width: 280px) and (max-width: 550px){
+  .btn-theme:nth-child(2){
+    margin-left: 1.5rem;
+  }
+}
+/* ========================================================================
+|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+======================================================================= */
+.disney-titles {
+  color: rgb(247, 71, 17);
+  font-size: 2.3rem;
+  font-weight: 500 !important;
+  line-height: 2.5rem;
+}
+@media screen and (min-width: 991px) and (max-width: 1200px) {
+  .disney-titles {
+    font-size: 1.8rem;
+    line-height: 2rem;
+  }
+}
+@media screen and (max-width: 991px) {
+  .display-none{
+    display: none !important;
+  }
+}
+@media screen and (min-width: 550px) and (max-width: 991px) {
+  .disney-titles {
+    font-size: 1.5rem;
+    line-height: 1.8rem;
+  }
+}
+@media screen and (min-width: 375px) and (max-width: 550px) {
+  .disney-titles {
+    font-size: 1.3rem;
+    line-height: 1.7rem;
+  }
+}
+@media screen and (min-width: 280px) and (max-width: 375px) {
+  .disney-titles {
+    font-size: 1.1rem;
+    line-height: 1.3rem;
+  }
+}
